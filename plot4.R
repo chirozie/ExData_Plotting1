@@ -25,7 +25,7 @@ household_power$Sub_metering_3 <- as.numeric(household_power$Sub_metering_3)
 household_power2 <- subset(household_power, Date == "2007-02-01" | Date =="2007-02-02")
 
 #Plotting the 4 graphs
-par(mfrow=c(2,2), mar = c(2,4,3,2))
+par(mfrow=c(2,2), mar =  c(4, 4, 2, 1))
 
 with(household_power2, plot(FullTimeDate, Global_active_power, type="l", xlab="", ylab="Global Active Power"))
 with(household_power2, plot(FullTimeDate, Voltage, type = "l", xlab="datetime", ylab="Voltage"))
